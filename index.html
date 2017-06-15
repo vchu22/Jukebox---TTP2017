@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Jukebox</title>
+	<link rel="stylesheet" href="jukebox.css" />
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+	<script type="text/javascript" src="./jukebox.js"></script>
+</head>
+<body>
+	<div class="jukebox">
+
+		<!-- Top Section -->
+		<div class="controlBar">
+			<input type="text" placeholder=""/>
+			<button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
+				<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+			</button>
+		</div>
+		<!-- Middle Section -->
+		<ul class="songSuggestion">
+			<li>
+				<div id="songSuggestionArtist">Lady gaga</div>
+				<div id="songSuggestionTitle">Bad Romance</div>
+				<img src="The_Fame_Monster.png" />
+			</li>
+			<li>
+				<div id="songSuggestionArtist">Lady gaga</div>
+				<div id="songSuggestionTitle">Bad Romance</div>
+				<img src="The_Fame_Monster.png" />
+			</li>
+			<li>
+				<div id="songSuggestionArtist">Lady gaga</div>
+				<div id="songSuggestionTitle">Bad Romance</div>
+				<img src="The_Fame_Monster.png" />
+			</li>
+			<li>
+				<div id="songSuggestionArtist">Lady gaga</div>
+				<div id="songSuggestionTitle">Bad Romance</div>
+				<img src="The_Fame_Monster.png" />
+			</li>
+			<li>
+				<div id="songSuggestionArtist">Lady gaga</div>
+				<div id="songSuggestionTitle">Bad Romance</div>
+				<img src="The_Fame_Monster.png" />
+			</li>
+		</div>
+		<!-- Bottom Section -->
+		<div class="songPlayer">
+			<div class="songInfo">
+				<img id="albumimg" src="The_Fame_Monster.png" />
+				<div id="songName">Bad Romance</div>
+				<div id="songAlbum">The Fame Monster</div>
+				<div id="artist">Lady gaga</div>
+				<div class="audioContol">
+					<div class="left">
+						<audio>
+							<source src="RogerThat_-_Beautiful_Wonderful_Life.mp3" type="audio/mpeg">
+							<source src=".mp3" type="audio/mpeg">
+								Your browser does not support the audio element.
+						</audio>
+						<button type="button" class="btn btn-default prevBtn" aria-label="Left Align">
+			  			<span class="glyphicon glyphicon-step-backward" aria-hidden="true"></span>
+						</button>
+						<button type="button" class="btn btn-default stopBtn" aria-label="Left Align">
+			  			<span class="glyphicon glyphicon-stop" aria-hidden="true"></span>
+						</button>
+						<button type="button" class="btn btn-default playBtn" aria-label="Left Align">
+			  			<span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+						</button>
+						<button type="button" class="btn btn-default nextBtn" aria-label="Left Align">
+			  			<span class="glyphicon glyphicon-step-forward" aria-hidden="true"></span>
+						</button>
+					</div>
+					<div class="right">
+						<button type="button" class="btn btn-default collapseBtn" aria-label="Left Align">
+				  			<span class="glyphicon glyphicon-collapse-down" aria-hidden="true"></span>
+						</button>
+					</div>
+				</div>
+			</div>
+			<ul class="playList">
+				<li>Bad Romance - Lady Gaga</li>
+				<li>Bad Romance - Lady Gaga</li>
+				<li>Bad Romance - Lady Gaga</li>
+				<li>Bad Romance - Lady Gaga</li>
+				<li>Bad Romance - Lady Gaga</li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>
