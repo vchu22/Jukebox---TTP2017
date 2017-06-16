@@ -15,10 +15,15 @@ left{
 .controlBar{
   background-color: black;
   height: 40px;
-  padding: 5px 30%;
+  padding: 4px 30%;
 }
-.controlBar > input[type='text']{
+#searchBar{
   width: 200px;
+  height: 100%;
+  background-color: lightgrey;
+  border: 0;
+  border-radius: 5px;
+  margin:
 }
 
 /* Midddle section */
@@ -38,11 +43,12 @@ left{
 .songSuggestion > li:hover{
   background-color: orange;
 }
-.songSuggestion > li > img{
-  width: 80%;
+.songSuggestion > li > *{
   margin: 0 10%;
 }
-
+.songSuggestion > li > img{
+  width: 80%;
+}
 
 /* The bottom section */
 .songPlayer{

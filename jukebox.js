@@ -1,8 +1,9 @@
-var numSongs = 0, selectedID;
 
 function Jukebox(){
   this.playing = false;
   this.songs = [];
+  this.currentSong;
+  this.songSuggestion = [];
   this.search = function(searchTerm){
     //make an ajax request
     var result;
@@ -17,20 +18,27 @@ function Jukebox(){
         success: function(response) {
             console.log(response);
             result = response;
+            var numPatt = /\d+/g; // regex to find numbers
+            var id, ids = [];
+            // extract song id from result
+            for (var i=0; i<result.aRows.length; i++){
+              id = result.aRows[i].match(numPatt);
+              ids[i] = id;
+            }
+            for (var i=0; i<result.aRows.length; i++){
+              console.log("ids:"+ids[i]);
+            }
+            this.songSuggestion = ids.slice();
+            console.log("suggestion:"+this.songSuggestion);
+            // display search results
+            for (var i=0; i<result.aRows.length; i++){
+
+            }
         },
         error: function(err) {
             console.error( err );
         }
     });
-    // extract song id from result
-    var id;
-    for (var i=0; i<result.aRows.length; i++){
-
-    }
-    //display serch results
-    for (var i=0; i<result.aRows.length; i++){
-
-    }
   }
   this.add = function(song){
 
@@ -50,7 +58,10 @@ function Jukebox(){
   }
 }
 
-$(function() {
+var jukebox = new Jukebox();
+jukebox.search('deerhoof');
+console.log(jukebox);
+$(function(){
   $(".playBtn").click(function() {
     $(".glyphicon-play").toggleClass('glyphicon-pause');
   });
@@ -61,7 +72,8 @@ $(function() {
   });
 
   $(".playList > li").click(function(){
+    alert();
     $(".playList > li").removeClass("active");
     $(this).addClass("active");
   });
-});
+})

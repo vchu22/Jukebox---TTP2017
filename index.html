@@ -6,13 +6,14 @@
 	<link rel="stylesheet" href="jukebox.css" />
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<!-- Latest compiled and minified JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<!-- Optional theme -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<link rel="stylesheet" href="bootstrap-3.3.7/css/bootstrap.min.css">
 
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="bootstrap-3.3.7/css/bootstrap-theme.min.css">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="bootstrap-3.3.7/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="./jukebox.js"></script>
 </head>
 <body>
@@ -20,7 +21,7 @@
 
 		<!-- Top Section -->
 		<div class="controlBar">
-			<input type="text" placeholder=""/>
+			<input type="text" id="searchBar" placeholder=""/>
 			<button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
 				<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
 			</button>
@@ -28,43 +29,37 @@
 		<!-- Middle Section -->
 		<ul class="songSuggestion">
 			<li>
-				<div id="songSuggestionArtist">Lady gaga</div>
-				<div id="songSuggestionTitle">Bad Romance</div>
+				<div class="songSuggestionArtist">Lady gaga</div>
+				<div class="songSuggestionTitle">Bad Romance</div>
 				<img src="The_Fame_Monster.png" />
 			</li>
 			<li>
-				<div id="songSuggestionArtist">Lady gaga</div>
-				<div id="songSuggestionTitle">Bad Romance</div>
+				<div class="songSuggestionArtist">Lady gaga</div>
+				<div class="songSuggestionTitle">Bad Romance</div>
 				<img src="The_Fame_Monster.png" />
 			</li>
 			<li>
-				<div id="songSuggestionArtist">Lady gaga</div>
-				<div id="songSuggestionTitle">Bad Romance</div>
+				<div class="songSuggestionArtist">Lady gaga</div>
+				<div class="songSuggestionTitle">Bad Romance</div>
 				<img src="The_Fame_Monster.png" />
 			</li>
 			<li>
-				<div id="songSuggestionArtist">Lady gaga</div>
-				<div id="songSuggestionTitle">Bad Romance</div>
-				<img src="The_Fame_Monster.png" />
-			</li>
-			<li>
-				<div id="songSuggestionArtist">Lady gaga</div>
-				<div id="songSuggestionTitle">Bad Romance</div>
+				<div class="songSuggestionArtist">Lady gaga</div>
+				<div class="songSuggestionTitle">Bad Romance</div>
 				<img src="The_Fame_Monster.png" />
 			</li>
 		</div>
 		<!-- Bottom Section -->
 		<div class="songPlayer">
 			<div class="songInfo">
-				<img id="albumimg" src="The_Fame_Monster.png" />
-				<div id="songName">Bad Romance</div>
-				<div id="songAlbum">The Fame Monster</div>
-				<div id="artist">Lady gaga</div>
+				<img id="albumimg" src="Lobo_Loco_-_My_FAVORITE_SWEET_HOME_TRACKS.jpg" />
+				<div id="songName">Indian Summer</div>
+				<div id="songAlbum">Indian Summer</div>
+				<div id="artist">Lobo Loco</div>
 				<div class="audioContol">
 					<div class="left">
 						<audio>
-							<source src="RogerThat_-_Beautiful_Wonderful_Life.mp3" type="audio/mpeg">
-							<source src=".mp3" type="audio/mpeg">
+							<source src="music.mp3" type="audio/mpeg">
 								Your browser does not support the audio element.
 						</audio>
 						<button type="button" class="btn btn-default prevBtn" aria-label="Left Align">
@@ -88,9 +83,7 @@
 				</div>
 			</div>
 			<ul class="playList">
-				<li>Bad Romance - Lady Gaga</li>
-				<li>Bad Romance - Lady Gaga</li>
-				<li>Bad Romance - Lady Gaga</li>
+				<li>Indian Summer - Lobo Loco</li>
 				<li>Bad Romance - Lady Gaga</li>
 				<li>Bad Romance - Lady Gaga</li>
 			</ul>
